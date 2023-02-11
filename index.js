@@ -8,4 +8,6 @@ var datetime = "Last Sync: " + currentdate.getDate() + "/"
                 + currentdate.getMinutes() + ":" 
                 + currentdate.getSeconds();
 
-div_time.innerHTML = datetime;
+setInterval(function() {
+    div_time.innerHTML = datetime;
+}, 1000);
