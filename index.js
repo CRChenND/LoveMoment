@@ -10,7 +10,7 @@ function currentTime() {
     var Difference_In_Time = date.getTime() - date_origin.getTime();
       
     // To calculate the no. of days between two dates
-    var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+    var Difference_In_Days = Math.trunc(Difference_In_Time / (1000 * 3600 * 24));
   
     hh = (hh < 10) ? "0" + hh : hh;
     mm = (mm < 10) ? "0" + mm : mm;
