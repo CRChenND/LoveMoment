@@ -40,7 +40,6 @@ function weather( cityID ) {
                   "，最高温" + celcius_max + "&deg" +
                   "，最低温" + celcius_min + "&deg"         
     document.getElementById("weather").innerText = weather;
-    let t = setTimeout(function(){ weather( 2960313 ) }, 10000);
   })
   .catch(function() {
     // catch any errors
