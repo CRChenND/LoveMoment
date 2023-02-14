@@ -20,5 +20,19 @@ function currentTime() {
   
     document.getElementById("timer").innerText = time; 
     let t = setTimeout(function(){ currentTime() }, 1000);
-  }
-  currentTime();
+}
+
+function weather( cityID ) {
+  var key = '{ed8217628325dfa3c4e8c59fa356c100}';
+  fetch('https://api.openweathermap.org/data/2.5/weather?id=' + cityID+ '&appid=' + key)  
+  .then(function(resp) { return resp.json() }) // Convert data to json
+  .then(function(data) {
+    console.log(data);
+  })
+  .catch(function() {
+    // catch any errors
+  });
+}
+
+currentTime();
+weatherBalloon( 2960313 ); // City ID: LU
