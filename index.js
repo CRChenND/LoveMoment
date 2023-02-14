@@ -76,7 +76,7 @@ function weather( cityID ) {
 
 function photo(){
     var src_list = [
-      'burger', 'death', 'flower',
+      'burger', 'death', 'flowers',
       'gitfs', 'hands', 'scarf'
     ];
     var source_photo = src_list[Math.floor(Math.random() * src_list.length)];
@@ -86,7 +86,7 @@ function photo(){
     var src_dict = {
       'burger':'猫猫宝宝，这是我们在根特吃的好吃汉堡哟yummy～', 
       'death':'猫猫宝宝，这是马拉之死，是我们在比利时的博物馆看的哟，应该是真的吧哈哈哈，爱你', 
-      'flower':'呜呜这是猫猫宝宝送我的花花，真好看！爱你！',
+      'flowers':'呜呜这是猫猫宝宝送我的花花，真好看！爱你！',
       'gitfs':'远隔重洋给猫猫宝宝带来的礼物们❤️', 
       'hands':'和猫猫宝宝走回家的时候一起牵手呜呜，想抱抱你', 
       'scarf':'猫猫宝宝送的围巾呜呜 真好看！'
