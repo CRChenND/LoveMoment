@@ -80,8 +80,8 @@ function photo(){
       'gitfs', 'hands', 'scarf'
     ];
     var source_photo = src_list[Math.floor(Math.random() * src_list.length)];
-    var head = 'https://github.com/CRChenND/LoveMoment/blob/main/photos/'
-    // document.getElementById("photo").src = head + source_photo + '.jpg';
+    var head = 'https://raw.githubusercontent.com/CRChenND/LoveMoment/main/photos/'
+    document.getElementById("photo").src = head + source_photo + '.jpg';
 }
 
 currentTime();
