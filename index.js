@@ -34,7 +34,7 @@ function weather( cityID ) {
     var celcius_min = Math.round(parseFloat(data.main.temp_min)-273.15);
     var description = d.weather[0].description;
 
-    let weather_text = "今天卢森堡的天气是"+ description +
+    var weather_text = "今天卢森堡的天气是"+ description +
                   "，现在的实际温度是" + celcius + "&deg" +
                   "，体感温度是" + feels_like + "&deg" +
                   "，最高温" + celcius_max + "&deg" +
@@ -49,4 +49,6 @@ function weather( cityID ) {
 }
 
 currentTime();
-weather( 2960313 ); // City ID: LU
+window.onload = function() {
+  weather( 2960313 ); // City ID: LU
+}
