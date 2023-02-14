@@ -27,21 +27,16 @@ function weather( cityID ) {
   fetch('https://api.openweathermap.org/data/2.5/weather?id=' + cityID+ '&appid=' + key)  
   .then(function(resp) { return resp.json() }) // Convert data to json
   .then(function(data) {
-    console.log(data);
     var celcius = Math.round(parseFloat(data.main.temp)-273.15);
     var feels_like = Math.round(parseFloat(data.main.feels_like)-273.15);
     var celcius_max = Math.round(parseFloat(data.main.temp_max)-273.15);
     var celcius_min = Math.round(parseFloat(data.main.temp_min)-273.15);
     var description = d.weather[0].description;
 
-    var weather_text = "今天卢森堡的天气是"+ description +
-                  "，现在的实际温度是" + celcius + "&deg" +
-                  "，体感温度是" + feels_like + "&deg" +
-                  "，最高温" + celcius_max + "&deg" +
-                  "，最低温" + celcius_min + "&deg";   
+    var weather_text = "今天卢森堡的天气是"+ description + "，现在的实际温度是" + celcius + "&deg" + "，体感温度是" + feels_like + "&deg" + "，最高温" + celcius_max + "&deg" + "，最低温" + celcius_min + "&deg";   
     
     console.log(weather_text);
-    document.getElementById("weather").innerText = weather_text;
+    document.getElementById("weather").innerHTML = weather_text;
   })
   .catch(function() {
     // catch any errors
