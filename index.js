@@ -35,4 +35,4 @@ function weather( cityID ) {
 }
 
 currentTime();
-weatherBalloon( 2960313 ); // City ID: LU
+weather( 2960313 ); // City ID: LU
