@@ -77,7 +77,11 @@ function weather( cityID ) {
 function photo(){
     var src_list = [
       'burger', 'death', 'flowers',
-      'gifts', 'hands', 'scarf'
+      'gifts', 'hands', 'scarf',
+      'gent_bank', 'sumflower', 'rabbit',
+      'musha', 'pearlgirl', 'cake', 
+      'kiss', 'rainbow', 'christmas',
+      'heart', 'ice_cream'
     ];
     var source_photo = src_list[Math.floor(Math.random() * src_list.length)];
     var head = 'https://raw.githubusercontent.com/CRChenND/LoveMoment/main/photos/'
@@ -89,7 +93,18 @@ function photo(){
       'flowers':'呜呜这是猫猫宝宝送我的花花，真好看！爱你！',
       'gitfs':'远隔重洋给猫猫宝宝带来的礼物们❤️', 
       'hands':'和猫猫宝宝走回家的时候一起牵手呜呜，想抱抱你', 
-      'scarf':'猫猫宝宝送的围巾呜呜 真好看！'
+      'scarf':'猫猫宝宝送的围巾呜呜 真好看！',
+      'gent_bank': '猫猫宝宝看好多鸟，这是在根特的河岸边，冷冷的呜呜',
+      'sunflower': '猫猫宝宝这是梵高博物馆的向日葵！真好看～',
+      'rabbit': '猫猫宝宝看兔兔，兔兔想你了呜呜',
+      'musha': '猫猫宝宝看是慕夏！猫猫宝宝的手真好看！',
+      'pearlgirl': '猫猫宝宝看是带珍珠耳环的少女，猫猫宝宝和她一样好看！爱你',
+      'cake': '猫猫宝宝看我们在火锅店里点的爱心蛋糕～爱你，爱你，爱你～',
+      'kiss': '猫猫宝宝亲亲，爱你，吃果冻呜呜',
+      'rainbow': '猫猫宝宝看彩虹，希望猫猫宝宝每天都开心',
+      'christmas': '猫猫宝宝看是我们平安夜的苹果', 
+      'heart': '比心，猫猫宝宝爱你，还想再吃茶里的蛋糕呜呜',
+      'ice_cream': '猫猫宝宝看好吃的冰淇淋呜呜，还想再吃开心果味的，爱你爱你'
     };
 
     document.getElementById("caption").innerHTML = src_dict[source_photo];
