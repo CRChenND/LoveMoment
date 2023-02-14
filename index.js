@@ -79,7 +79,7 @@ function photo(){
       'burger', 'death', 'flower',
       'gitfs', 'hands', 'scarf'
     ]
-    var source_photo = src_list[Math.floor(Math.random() * array.length)]
+    var source_photo = src_list[Math.floor(Math.random() * src_list.length)]
     document.getElementById("photo").src = './photos/' + source_photo + '.jpg'
 }
 
