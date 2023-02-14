@@ -78,7 +78,7 @@ function photo(){
     var src_list = [
       'burger', 'death', 'flowers',
       'gifts', 'hands', 'scarf',
-      'gent_bank', 'sumflower', 'rabbit',
+      'gent_bank', 'sunflower', 'rabbit',
       'musha', 'pearlgirl', 'cake', 
       'kiss', 'rainbow', 'christmas',
       'heart', 'ice_cream'
