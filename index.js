@@ -77,7 +77,7 @@ function weather( cityID ) {
 function photo(){
     var src_list = [
       'burger', 'death', 'flowers',
-      'gitfs', 'hands', 'scarf'
+      'gifts', 'hands', 'scarf'
     ];
     var source_photo = src_list[Math.floor(Math.random() * src_list.length)];
     var head = 'https://raw.githubusercontent.com/CRChenND/LoveMoment/main/photos/'
