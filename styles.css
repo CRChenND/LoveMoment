@@ -1,3 +1,11 @@
-.timer {
-    
+body {
+    font-family: 'Tangerine', serif;
+}
+
+#timer {
+    font-size: 24px;
+}
+
+#img{
+    height: 30%;
 }
