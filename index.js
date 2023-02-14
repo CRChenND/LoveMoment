@@ -81,7 +81,7 @@ function photo(){
       'gent_bank', 'sunflower', 'rabbit',
       'musha', 'pearlgirl', 'cake', 
       'kiss', 'rainbow', 'christmas',
-      'heart', 'ice_cream'
+      'heart', 'ice_cream', 'necklace',
     ];
     var source_photo = src_list[Math.floor(Math.random() * src_list.length)];
     var head = 'https://raw.githubusercontent.com/CRChenND/LoveMoment/main/photos/'
@@ -104,7 +104,8 @@ function photo(){
       'rainbow': '猫猫宝宝看彩虹，希望猫猫宝宝每天都开心',
       'christmas': '猫猫宝宝看是我们平安夜的苹果', 
       'heart': '比心，猫猫宝宝爱你，还想再吃茶里的蛋糕呜呜',
-      'ice_cream': '猫猫宝宝看好吃的冰淇淋呜呜，还想再吃开心果味的，爱你爱你'
+      'ice_cream': '猫猫宝宝看好吃的冰淇淋呜呜，还想再吃开心果味的，爱你爱你',
+      'necklace': '猫猫宝宝情人节快乐，爱你爱你！期待你戴上的样子'
     };
 
     document.getElementById("caption").innerHTML = src_dict[source_photo];
