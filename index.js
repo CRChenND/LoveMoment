@@ -33,13 +33,42 @@ function weather( cityID ) {
     var celcius_min = Math.round(parseFloat(data.main.temp_min)-273.15);
     var description = data.weather[0].description;
 
-    var weather_text = "今天卢森堡的天气是"+ description + "，现在的实际温度是" + celcius + "&deg" + "，体感温度是" + feels_like + "&deg" + "，最高温" + celcius_max + "&deg" + "，最低温" + celcius_min + "&deg";   
+    var remind = ''
+    
+    if (description.indexOf('rain')){
+        remind = '。猫猫宝宝下雨啦，要记得带伞哟，爱你❤️';
+    }
+    else if (description.indexOf('snow')){
+        remind = '。猫猫宝宝下雪啦，别忘了带伞，要多穿点衣服，不要冻着啦呜呜。';
+    }
+    else if (description.indexOf('clouds')){
+        remind = '。猫猫宝宝，今天的云可能有点多，不过不要怕，小鱼宝宝会一直陪着你的~';
+    }
+    else if (description.indexOf('clear sky')){
+        remind = '。猫猫宝宝今天是晴天哟，希望每天猫猫宝宝都可以像个小太阳一样开开心心！'
+    }
+
+    var remind_temp = ''
+    if (feels_like < 10) {
+        remind_temp = '猫猫宝宝现在冷冷的，要多穿点多穿点哟，不要肚肚痛啦。'
+    }
+    else if (feels_like > 28) {
+      remind_temp = '猫猫宝宝现在好热呀，要涂防晒、多喝水哟，不要中暑啦，爱你爱你！'
+    }
+
+    var weather_text = "今天卢森堡的天气是"+ description + remind + 
+                       "现在的气温是" + celcius + "&degC" + 
+                       "，体感温度是" + feels_like + "&degC" + 
+                       "，最高温" + celcius_max + "&degC" + 
+                       "，最低温" + celcius_min + "&degC。" + 
+                       remind_temp;   
     
     console.log(weather_text);
     document.getElementById("weather").innerHTML = weather_text;
   })
   .catch(function() {
     // catch any errors
+    console.log('check error!')
   });
 }
 
