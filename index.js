@@ -75,11 +75,11 @@ function weather( cityID ) {
 }
 
 function photo(){
-    src_list = [
+    var src_list = [
       'burger', 'death', 'flower',
       'gitfs', 'hands', 'scarf'
     ]
-    source_photo = src_list[Math.floor(Math.random() * array.length)]
+    var source_photo = src_list[Math.floor(Math.random() * array.length)]
     document.getElementById("photo").src = './photos' + source_photo + '.jpg'
 }
 
