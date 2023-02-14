@@ -16,7 +16,7 @@ function currentTime() {
     mm = (mm < 10) ? "0" + mm : mm;
     ss = (ss < 10) ? "0" + ss : ss;
       
-    let time = "现在是猫猫和小鱼在一起的" + Difference_In_Days + "天" + hh + "小时" + mm + "分" + ss + "秒";
+    let time = "现在是猫猫和小鱼在一起的第" + Difference_In_Days + "天" + hh + "小时" + mm + "分" + ss + "秒";
   
     document.getElementById("timer").innerText = time; 
     let t = setTimeout(function(){ currentTime() }, 1000);
@@ -65,6 +65,8 @@ function weather( cityID ) {
     
     console.log(weather_text);
     document.getElementById("weather").innerHTML = weather_text;
+
+    let t = setTimeout(function(){ weather( 2960313 ) }, 60*1000);
   })
   .catch(function() {
     // catch any errors
@@ -72,7 +74,15 @@ function weather( cityID ) {
   });
 }
 
-currentTime();
-window.onload = function() {
-  weather( 2960313 ); // City ID: LU
+function photo(){
+    src_list = [
+      'burger', 'death', 'flower',
+      'gitfs', 'hands', 'scarf'
+    ]
+    source_photo = src_list[Math.floor(Math.random() * array.length)]
+    document.getElementById("photo").src = './photos' + source_photo + '.jpg'
 }
+
+currentTime();
+weather( 2960313 ); // City ID: LU
+photo()
