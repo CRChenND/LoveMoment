@@ -19,3 +19,10 @@ img{
     margin-top: 30%;
     text-align: center;
 }
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
