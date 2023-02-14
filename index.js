@@ -81,7 +81,7 @@ function photo(){
     ];
     var source_photo = src_list[Math.floor(Math.random() * src_list.length)];
     var head = 'https://raw.githubusercontent.com/CRChenND/LoveMoment/main/photos/'
-    document.getElementById("photo").src = head + source_photo + '.jpg';
+    document.getElementById("moment").src = head + source_photo + '.jpg';
 }
 
 currentTime();
