@@ -11,12 +11,12 @@ body {
     font-size: 24px;
 }
 
-img{
-    height: 30%;
-}
-
 #bible{
     margin-top: 30%;
+    text-align: center;
+}
+
+#caption{
     text-align: center;
 }
 
