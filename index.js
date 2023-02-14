@@ -80,7 +80,7 @@ function photo(){
       'gitfs', 'hands', 'scarf'
     ]
     var source_photo = src_list[Math.floor(Math.random() * array.length)]
-    document.getElementById("photo").src = './photos' + source_photo + '.jpg'
+    document.getElementById("photo").src = './photos/' + source_photo + '.jpg'
 }
 
 currentTime();
