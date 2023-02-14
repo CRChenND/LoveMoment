@@ -35,22 +35,22 @@ function weather( cityID ) {
 
     var remind = ''
     
-    if (description.indexOf('rain')){
+    if (description.indexOf('rain')>-1){
         remind = '。猫猫宝宝下雨啦，要记得带伞哟，爱你❤️';
     }
-    else if (description.indexOf('snow')){
+    else if (description.indexOf('snow')>-1){
         remind = '。猫猫宝宝下雪啦，别忘了带伞，要多穿点衣服，不要冻着啦呜呜。';
     }
-    else if (description.indexOf('clouds')){
+    else if (description.indexOf('clouds')>-1){
         remind = '。猫猫宝宝，今天的云可能有点多，不过不要怕，小鱼宝宝会一直陪着你的~';
     }
-    else if (description.indexOf('clear sky')){
+    else if (description.indexOf('clear sky')>-1){
         remind = '。猫猫宝宝今天是晴天哟，希望每天猫猫宝宝都可以像个小太阳一样开开心心！'
     }
 
     var remind_temp = ''
     if (feels_like < 10) {
-        remind_temp = '猫猫宝宝现在冷冷的，要多穿点多穿点哟，不要肚肚痛啦。'
+        remind_temp = '猫猫宝宝现在冷冷的，要多穿点哟，不要肚肚痛啦，抱抱抱抱。'
     }
     else if (feels_like > 28) {
       remind_temp = '猫猫宝宝现在好热呀，要涂防晒、多喝水哟，不要中暑啦，爱你爱你！'
