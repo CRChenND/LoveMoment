@@ -23,7 +23,7 @@ function currentTime() {
 }
 
 function weather( cityID ) {
-  var key = '{ed8217628325dfa3c4e8c59fa356c100}';
+  var key = '0c6709b0bc1feaf2a6afcfa96c22b317';
   fetch('https://api.openweathermap.org/data/2.5/weather?id=' + cityID+ '&appid=' + key)  
   .then(function(resp) { return resp.json() }) // Convert data to json
   .then(function(data) {
