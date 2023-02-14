@@ -1,5 +1,8 @@
 body {
     font-family: 'ZCOOL XiaoWei', sans-serif;
+}
+
+.center{
     margin: auto;
     width: 50%;
 }
@@ -14,4 +17,5 @@ img{
 
 #bible{
     margin-top: 30%;
+    text-align: center;
 }
