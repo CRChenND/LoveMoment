@@ -28,6 +28,19 @@ function weather( cityID ) {
   .then(function(resp) { return resp.json() }) // Convert data to json
   .then(function(data) {
     console.log(data);
+    var celcius = Math.round(parseFloat(data.main.temp)-273.15);
+    var feels_like = Math.round(parseFloat(data.main.feels_like)-273.15);
+    var celcius_max = Math.round(parseFloat(data.main.temp_max)-273.15);
+    var celcius_min = Math.round(parseFloat(data.main.temp_min)-273.15);
+    var description = d.weather[0].description;
+
+    let weather = "今天卢森堡的天气是"+ description +
+                  "，现在的实际温度是" + celcius + "&deg" +
+                  "，体感温度是" + feels_like + "&deg" +
+                  "，最高温" + celcius_max + "&deg" +
+                  "，最低温" + celcius_min + "&deg"         
+    document.getElementById("weather").innerText = weather;
+    let t = setTimeout(function(){ weather( 2960313 ) }, 10000);
   })
   .catch(function() {
     // catch any errors
