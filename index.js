@@ -78,11 +78,12 @@ function photo(){
     var src_list = [
       'burger', 'death', 'flower',
       'gitfs', 'hands', 'scarf'
-    ]
-    var source_photo = src_list[Math.floor(Math.random() * src_list.length)]
-    document.getElementById("photo").src = './photos/' + source_photo + '.jpg'
+    ];
+    var source_photo = src_list[Math.floor(Math.random() * src_list.length)];
+    console.log('photos/' + source_photo + '.jpg');
+    document.getElementById("photo").src = 'photos/' + source_photo + '.jpg';
 }
 
 currentTime();
 weather( 2960313 ); // City ID: LU
-photo()
+photo();
